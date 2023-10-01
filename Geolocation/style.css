@@ -2,13 +2,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: rgb(24, 24, 24);
+    color: aliceblue;
 }
 
 .container {
-    text-align: center;
+    text-align: left;
     animation: fadeIn 2s ease-in-out;
 }
 
@@ -19,4 +21,16 @@ body {
     to {
         opacity: 1;
     }
+}
+
+
+.container {
+    border: solid 2px gray;
+    width: 100vh;
+    border-radius: 4px;
+}
+
+#location, #ip, #sistema_operativo_info {
+
+    margin-left: 3vh;
 }

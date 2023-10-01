@@ -52,7 +52,23 @@ function handleLocationError(errorMessage) {
 }
 
 
-const sistemaOperativo = navigator.platform;
-        const sistemaOperativoInfo = document.getElementById('sistema-operativo-info');
-        sistemaOperativoInfo.textContent = `Sistema Operativo: ${sistemaOperativo}`;
+const userAgent = navigator.userAgent;
+const sistemaOperativoInfo = document.getElementById('sistema_operativo_info');
+
+let sistemaOperativoNombre = 'Desconocido';
+
+if (userAgent.match(/Win/i)) {
+    sistemaOperativoNombre = 'Windows';
+} else if (userAgent.match(/Mac/i)) {
+    sistemaOperativoNombre = 'macOS';
+} else if (userAgent.match(/Linux/i)) {
+    sistemaOperativoNombre = 'Linux';
+} else if (userAgent.match(/Android/i)) {
+    sistemaOperativoNombre = 'Android';
+} else if (userAgent.match(/iOS/i)) {
+    sistemaOperativoNombre = 'iOS';
+}
+
+sistemaOperativoInfo.textContent = `Sistema Operativo: ${sistemaOperativoNombre}`;
+
    
