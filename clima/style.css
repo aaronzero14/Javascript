@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(0, 55, 65);
+    text-align: center;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.79), rgb(26, 26, 26)), url("https://w0.peakpx.com/wallpaper/456/121/HD-wallpaper-weather-rain-sun-overcast-cold-hot.jpg");
+    background-attachment: fixed;
+    background-size:cover;
+}
+input {
+    background-color: black;
+    color: white;
+    border: solid rgb(65, 255, 252) 2px;
+}
+input::placeholder {
+
+    color: rgb(65, 255, 252);
+}
+
+
+input{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #31ffd2;
+    outline: none;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-bottom-color: #00a8ff;
+}
+
+.clima {
+    border-radius: 50%;
+    width: 20%;
+    border: solid 3px  #31ffd2;
+}
+
+
+#searchButton {
+    background-color: black;
+    width: 30vh;
+    border: solid 3px  #31ffd2;
+    cursor: pointer;
+    color: #5cc9ff;
+    height: 7vh;
+    margin-left: 10px;
+    transition: 0.8s;
+
+
+}
+
+
+#searchButton:hover {
+    background-color: black;
+    width: 40vh;
+    border: solid 3px  #31ffd2;
+    cursor: pointer;
+    color: #5cc9ff;
+    height: 7vh;
+    margin-left: 10px;
+    transition: 1s;
+
+}
+
+
+.typewriter {
+    padding: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    color:#31ffd2;
+  }
+  
+  .typing {
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #333;
+    }
+  }
+
+footer {
+    position: fixed; /* This makes the footer fixed at the bottom of the viewport */
+    bottom: 0; /* Align it to the bottom of the viewport */
+    width: 100%; /* Make it span the entire width of the viewport */
+    background-color: #333; /* Set your preferred background color */
+    color: #fff; /* Set text color */
+    padding: 10px 0; /* Add some padding to the footer */
+    text-align: center; /* Center-align the content within the footer */
+    margin-left: -6px;
+}
